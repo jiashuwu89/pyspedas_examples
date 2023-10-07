@@ -2,25 +2,9 @@ import os
 import subprocess
 
 """
-def convert_notebooks_to_scripts(directory):
-    # List all files in the directory
-    files = os.listdir(directory)
-
-    # Filter out only the Jupyter Notebook files
-    notebooks = [f for f in files if f.endswith('.ipynb')]
-
-    for notebook in notebooks:
-        # Construct the full path to the notebook
-        notebook_path = os.path.join(directory, notebook)
-
-        # Convert the notebook to a Python script using nbconvert
-        # The "--output" flag specifies the output filename without the extension
-        output_name = os.path.splitext(notebook)[0]
-        subprocess.run(["jupyter", "nbconvert", "--to", "script", notebook_path, "--output", output_name])
-
-# Specify the directory you want to search in
-directory_path = "pyspedas_examples/notebooks/"  # Current directory. Change this if needed.
-convert_notebooks_to_scripts(directory_path)
+This module convert notebook to python script with markdown as comment.
+How to run:
+    python pyspedas_examples/notebooks/convert_nb2script.py
 """
 
 import nbformat
