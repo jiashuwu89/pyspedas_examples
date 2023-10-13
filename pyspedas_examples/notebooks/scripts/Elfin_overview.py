@@ -1,7 +1,8 @@
 # # ELFIN EPD data loading example
 # This notebook demonstrates how to load elfin state data, l1 and l2 epd data. And how to generate enegy and picth angle spectrogram with l2 data.
 
-%pip install --force-reinstall --no-cache-dir git+https://github.com/spedas/pyspedas.git@elfin
+!git clone --branch elfin https://github.com/spedas/pyspedas.git
+!pip install pyspedas/
 
 import pyspedas
 from pytplot import tplot, store_data, options
